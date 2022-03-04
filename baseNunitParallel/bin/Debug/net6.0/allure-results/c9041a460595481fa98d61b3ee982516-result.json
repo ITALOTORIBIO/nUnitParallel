@@ -1,0 +1,88 @@
+{
+  "uuid": "df6253ef-426a-4bed-9dbc-d0b4ca9345b0-tr-0-1002",
+  "historyId": "baseNunitParallel.Tests.OpenBingAndSearch",
+  "fullName": "baseNunitParallel.Tests.OpenBingAndSearch",
+  "labels": [
+    {
+      "name": "thread",
+      "value": "ParallelWorker#6"
+    },
+    {
+      "name": "host",
+      "value": "DESKTOP-2LBMQ9D"
+    },
+    {
+      "name": "package",
+      "value": "baseNunitParallel"
+    },
+    {
+      "name": "testMethod",
+      "value": "OpenBingAndSearch"
+    },
+    {
+      "name": "testClass",
+      "value": "Tests"
+    },
+    {
+      "name": "tag",
+      "value": "SampleTag"
+    },
+    {
+      "name": "tag",
+      "value": "NUnit"
+    },
+    {
+      "name": "tag",
+      "value": "Debug"
+    },
+    {
+      "name": "severity",
+      "value": "critical"
+    },
+    {
+      "name": "feature",
+      "value": "Core"
+    }
+  ],
+  "links": [],
+  "name": "OpenBingAndSearch",
+  "status": "failed",
+  "statusDetails": {
+    "known": false,
+    "muted": false,
+    "flaky": false,
+    "message": "OpenQA.Selenium.WebDriverException : An unknown exception was encountered sending an HTTP request to the remote WebDriver server for URL http://localhost:4444/wd/hub/session. The exception message was: No connection could be made because the target machine actively refused it. (localhost:4444)\r\n  ----> System.Net.Http.HttpRequestException : No connection could be made because the target machine actively refused it. (localhost:4444)\r\n  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+    "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\r\n   at baseNunitParallel.Factory.DriverFactory.GetWebDriver(String hubUrl, ICapabilities capabilities) in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\Factory\\DriverFactory.cs:line 72\r\n   at baseNunitParallel.Factory.DriverFactory.CreateInstance(BrowserType browserType, String hubUrl) in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\Factory\\DriverFactory.cs:line 50\r\n   at baseNunitParallel.Tests.Setup() in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\UnitTest1.cs:line 22\r\n--HttpRequestException\r\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)\r\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\r\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\r\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\r\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\r\n--SocketException\r\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\r\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\r\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)\r\n--TearDown\r\n   at baseNunitParallel.Tests.TearDown() in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\UnitTest1.cs:line 29"
+  },
+  "stage": "finished",
+  "description": "\nSetup SetUp method failed\n\nTearDown TearDown method failed\nTest2\n",
+  "steps": [
+    {
+      "name": "OpenBingAndSearch skipped because of Setup failure",
+      "status": "skipped",
+      "statusDetails": {
+        "known": false,
+        "muted": false,
+        "flaky": false,
+        "message": "OpenQA.Selenium.WebDriverException : An unknown exception was encountered sending an HTTP request to the remote WebDriver server for URL http://localhost:4444/wd/hub/session. The exception message was: No connection could be made because the target machine actively refused it. (localhost:4444)\r\n  ----> System.Net.Http.HttpRequestException : No connection could be made because the target machine actively refused it. (localhost:4444)\r\n  ----> System.Net.Sockets.SocketException : No connection could be made because the target machine actively refused it.\r\nTearDown : System.NullReferenceException : Object reference not set to an instance of an object.",
+        "trace": "   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\r\n   at OpenQA.Selenium.WebDriver.Execute(String driverCommandToExecute, Dictionary`2 parameters)\r\n   at OpenQA.Selenium.WebDriver.StartSession(ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.WebDriver..ctor(ICommandExecutor executor, ICapabilities capabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(ICommandExecutor commandExecutor, ICapabilities desiredCapabilities)\r\n   at OpenQA.Selenium.Remote.RemoteWebDriver..ctor(Uri remoteAddress, ICapabilities desiredCapabilities, TimeSpan commandTimeout)\r\n   at baseNunitParallel.Factory.DriverFactory.GetWebDriver(String hubUrl, ICapabilities capabilities) in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\Factory\\DriverFactory.cs:line 72\r\n   at baseNunitParallel.Factory.DriverFactory.CreateInstance(BrowserType browserType, String hubUrl) in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\Factory\\DriverFactory.cs:line 50\r\n   at baseNunitParallel.Tests.Setup() in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\UnitTest1.cs:line 22\r\n--HttpRequestException\r\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.ConnectAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.CreateHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.AddHttp11ConnectionAsync(HttpRequestMessage request)\r\n   at System.Threading.Tasks.TaskCompletionSourceWithCancellation`1.WaitWithCancellationAsync(CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.GetHttp11ConnectionAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.SendWithVersionDetectionAndRetryAsync(HttpRequestMessage request, Boolean async, Boolean doRequestAuth, CancellationToken cancellationToken)\r\n   at System.Net.Http.RedirectHandler.SendAsync(HttpRequestMessage request, Boolean async, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpClient.<SendAsync>g__Core|83_0(HttpRequestMessage request, HttpCompletionOption completionOption, CancellationTokenSource cts, Boolean disposeCts, CancellationTokenSource pendingRequestsCts, CancellationToken originalCancellationToken)\r\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.MakeHttpRequest(HttpRequestInfo requestInfo)\r\n   at OpenQA.Selenium.Remote.HttpCommandExecutor.Execute(Command commandToExecute)\r\n--SocketException\r\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)\r\n   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)\r\n   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|277_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)\r\n   at System.Net.Http.HttpConnectionPool.ConnectToTcpHostAsync(String host, Int32 port, HttpRequestMessage initialRequest, Boolean async, CancellationToken cancellationToken)\r\n--TearDown\r\n   at baseNunitParallel.Tests.TearDown() in D:\\Repos\\baseNunitParallel\\baseNunitParallel\\UnitTest1.cs:line 29"
+      },
+      "stage": "finished",
+      "steps": [],
+      "attachments": [
+        {
+          "name": "Console Output",
+          "source": "7f103e33a6fa4f08aa64c3c209fa5267-attachment.txt",
+          "type": "text/plain"
+        }
+      ],
+      "parameters": [],
+      "start": 1646380328607,
+      "stop": 1646380332935
+    }
+  ],
+  "attachments": [],
+  "parameters": [],
+  "start": 1646380328606,
+  "stop": 1646380332940
+}
