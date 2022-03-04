@@ -28,7 +28,7 @@ public class Tests
     [TearDown]
     protected void TearDown()
     {
-        driver.Quit();
+       
     }
 
     [Test]
